@@ -63,6 +63,10 @@
                        </h1>
                        <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                        <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+                       <!-- side-bar offcanvas -->
+                       <a class="d-block mt-3" data-bs-toggle="offcanvas" href="#side-bar" role="button" aria-controls="side-bar">
+                        Other Books
+                      </a>
                    </div>
                    <div class="col-md-5 d-none d-md-block text-center">
                      <!-- tooltip -->
@@ -338,6 +342,62 @@
          </div>
        </section>
 
+       <!-- Modal -->
+       <section class="bg-light">
+         <div class="container">
+            <div class="text-center">       
+              <h2 class="fw-bold">Stay in The loop</h2>
+              <p class="lead text-muted">Get the latest updates as they happen....</p>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-md-8 text-center">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem placeat ab ea adipisci alias repellendus nam. Itaque harum, quis, qui soluta nemo vel cupiditate eum maiores doloremque nostrum recusandae nihil ipsum alias molestias. Nesciunt, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                  Register For Updates
+                </button>
+              </div>
+            </div>
+         </div>
+       </section>
+
+
+       <!-- modal itself -->
+       <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Get lastest Updates</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique adipisci vitae suscipit cumque nemo asperiores veniam animi in non inventore sapiente laboriosam magni ullam necessitatibus a quo enim quam optio nihil dolorum odio, illum rerum facilis. Tempore vel est amet.</p>
+                  <label for="modal-email" class="form-label">Your Email Address:</label>
+                  <input type="text" id="modal-email" class="form-control" placeholder="e.g test@test.com">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="side-bar" aria-labelledby="side-bar-label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="side-bar-label">Other Books</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor, eligendi suscipit repudiandae nisi aut voluptatibus soluta laborum est adipisci!
+            </div>
+          </div>
+        </div>
+
+
+        
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/all.min.js"></script>
         <script>
